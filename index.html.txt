@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elizabeth Thomas | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Elizabeth Thomas</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="powerbi-projects.html">Power BI</a>
+      <a href="other-projects.html">Other Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I’m Elizabeth Thomas, a cost analyst specialising in technology spend, forecasting, and strategic insight. I build intuitive, data-driven dashboards and models that help teams make better decisions.</p>
+      <p>I work remotely from a quiet village in the UK, where I live with my cat, Kafka. I love reading, video games, and exploring meaningful patterns in numbers. I'm curious, detail-driven, and passionate about creating clarity through analysis.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Elizabeth Thomas</p>
+  </footer>
+</body>
+</html>
