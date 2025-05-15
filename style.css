@@ -21,7 +21,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -41,24 +40,24 @@ main {
   }
 }
 
-/* HEADER */
+/* HEADER BAR */
 
 .site-header {
   background-color: var(--green-deep);
-  color: white;
-  padding: 2rem 1rem 3rem;
+  padding: 2rem 1rem 4rem;
   text-align: center;
   position: relative;
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  color: white;
 }
 
-/* NAV BOX */
+/* NAVIGATION BAR */
 
-nav {
+.site-header nav {
   background: white;
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
@@ -70,7 +69,7 @@ nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-nav a {
+.site-header nav a {
   margin: 0 1rem;
   text-decoration: none;
   color: var(--green-deep);
@@ -79,7 +78,7 @@ nav a {
   padding-bottom: 4px;
 }
 
-nav a.active::after {
+.site-header nav a.active::after {
   content: "";
   position: absolute;
   height: 3px;
@@ -90,11 +89,11 @@ nav a.active::after {
   border-radius: 2px;
 }
 
-nav a:hover {
+.site-header nav a:hover {
   text-decoration: underline;
 }
 
-/* SECTION STYLING */
+/* SECTION CARDS */
 
 section {
   background-color: var(--box);
