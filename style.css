@@ -62,15 +62,15 @@ main {
     grid-template-columns: 1fr 2fr;
   }
 
-  .layout-full main {
+  main.layout-full {
     grid-template-columns: 1fr;
   }
 
-  .layout-contact main {
+  main.layout-contact {
     grid-template-columns: 400px 1fr;
   }
 
-  .layout-home main {
+  main.layout-home {
     grid-template-columns: 300px 1fr;
   }
 }
