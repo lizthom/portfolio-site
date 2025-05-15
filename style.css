@@ -106,6 +106,37 @@ footer {
 /* Animation */
 @keyframes fadeInUp {
   to {
+
+    form {
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: var(--green-deep);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f4742;
+}
+
     opacity: 1;
     transform: none;
   }
