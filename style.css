@@ -56,6 +56,24 @@ main {
   width: 100%;
 }
 
+@media (min-width: 700px) {
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  main.layout-full {
+    grid-template-columns: 1fr;
+  }
+
+  main.layout-contact {
+    grid-template-columns: 400px 1fr;
+  }
+
+  main.layout-home {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
 /* ========== HEADER ========== */
 
 .site-header {
