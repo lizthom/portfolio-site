@@ -40,6 +40,30 @@ main {
   }
 }
 
+/* ====== PAGE LAYOUT WIDTHS ====== */
+
+.layout-home section:first-child {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.layout-contact section:first-child {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.layout-full section {
+  max-width: none;
+  width: 100%;
+}
+
+/* Optional: tweak second section of home page if needed */
+.layout-home section:nth-child(2) {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
 /* HEADER BAR */
 
 .site-header {
