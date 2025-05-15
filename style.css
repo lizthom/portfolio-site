@@ -161,3 +161,52 @@ footer {
     transform: none;
   }
 }
+
+/* HEADER LAYOUT */
+.site-header {
+  background-color: var(--green-deep);
+  padding: 2rem 1rem 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.site-header h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* NAVIGATION PILL */
+.nav-wrapper {
+  background: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-wrapper a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--green-deep);
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+/* UNDERLINE ON ACTIVE LINK */
+.nav-wrapper a.active::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--green-soft);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
