@@ -80,3 +80,10 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
+section:nth-of-type(odd) {
+  background-color: var(--pink);
+}
+
+section:nth-of-type(even) {
+  background-color: var(--box);
+}
