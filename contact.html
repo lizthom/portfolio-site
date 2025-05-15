@@ -19,6 +19,7 @@
   </header>
 
   <main>
+    <!-- Contact info block -->
     <section>
       <h2>Contact Me</h2>
       <p>You can also reach me or explore my work here:</p>
@@ -42,17 +43,25 @@
           </a>
         </li>
       </ul>
+    </section>
 
-      <p style="margin-top: 2rem;">Or send a message directly using the form below:</p>
-
+    <!-- Contact form block -->
+    <section>
+      <h2>Send a Message</h2>
       <form action="https://formspree.io/f/xnndljkd" method="POST">
+        <label for="name">Your name:</label><br />
+        <input type="text" name="name" id="name" required><br /><br />
+
         <label for="email">Your email:</label><br />
         <input type="email" name="email" id="email" required><br /><br />
+
+        <label for="subject">Subject:</label><br />
+        <input type="text" name="subject" id="subject" required><br /><br />
 
         <label for="message">Your message:</label><br />
         <textarea name="message" id="message" rows="6" required></textarea><br /><br />
 
-        <button type="submit">Send</button>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
