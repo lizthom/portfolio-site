@@ -35,8 +35,8 @@ main {
 }
 
 @media (min-width: 700px) {
-  .two-column {
-    grid-template-columns: 320px 1fr;
+  main {
+    grid-template-columns: 1fr 2fr;
   }
 }
 
