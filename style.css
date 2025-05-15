@@ -34,16 +34,15 @@ main {
   flex: 1;
 }
 
-@media (min-width: 700px) {
-  main {
-    grid-template-columns: 1fr 2fr;
-  }
-}
-
-/* ====== PAGE LAYOUT WIDTHS ====== */
+/* ========== LAYOUT WIDTHS PER PAGE ========== */
 
 .layout-home section:first-child {
   max-width: 300px;
+  margin: 0 auto;
+}
+
+.layout-home section:nth-child(2) {
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -57,14 +56,26 @@ main {
   width: 100%;
 }
 
-/* Optional: tweak second section of home page if needed */
-.layout-home section:nth-child(2) {
-  max-width: 700px;
-  margin: 0 auto;
+/* Stack sections vertically at smaller widths */
+@media (min-width: 700px) {
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .layout-full main {
+    grid-template-columns: 1fr;
+  }
+
+  .layout-contact main {
+    grid-template-columns: 400px 1fr;
+  }
+
+  .layout-home main {
+    grid-template-columns: 300px 1fr;
+  }
 }
 
-
-/* HEADER BAR */
+/* ========== HEADER ========== */
 
 .site-header {
   background-color: var(--green-deep);
@@ -79,7 +90,7 @@ main {
   color: white;
 }
 
-/* NAVIGATION BAR */
+/* ========== NAVIGATION ========== */
 
 .site-header nav {
   background: white;
@@ -117,7 +128,7 @@ main {
   text-decoration: underline;
 }
 
-/* HERO SECTION */
+/* ========== HERO SECTION ========== */
 
 .hero-section {
   background: var(--green-soft);
@@ -132,7 +143,7 @@ main {
   margin-bottom: 1rem;
 }
 
-/* SECTION CARDS */
+/* ========== SECTION CARDS ========== */
 
 section {
   background-color: var(--box);
@@ -161,7 +172,7 @@ p {
   line-height: 1.8;
 }
 
-/* FORM STYLING */
+/* ========== FORMS ========== */
 
 form {
   max-width: 600px;
@@ -193,7 +204,7 @@ button:hover {
   background-color: #2f4742;
 }
 
-/* FOOTER */
+/* ========== FOOTER ========== */
 
 footer {
   text-align: right;
@@ -203,18 +214,20 @@ footer {
   margin-top: auto;
 }
 
+/* ========== BACKGROUND IMAGE ========== */
+
 .blob-background {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;      /* full viewport width */
+  width: 100vw;
   height: auto;
-  z-index: -1;       /* behind all content */
-  opacity: 0.05;     /* soft visibility, tweak if needed */
-  pointer-events: none; /* ensure it doesn’t block clicks */
+  z-index: -1;
+  opacity: 0.05;
+  pointer-events: none;
 }
 
-/* ANIMATION */
+/* ========== ANIMATION ========== */
 
 @keyframes fadeInUp {
   to {
