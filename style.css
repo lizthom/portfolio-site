@@ -93,6 +93,21 @@ main {
   text-decoration: underline;
 }
 
+/* HERO SECTION */
+
+.hero-section {
+  background: var(--green-soft);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
 /* SECTION CARDS */
 
 section {
@@ -160,7 +175,7 @@ footer {
   text-align: right;
   font-size: 0.9rem;
   color: var(--text-light);
-  padding: 3rem 2rem 1rem;
+  padding: 4rem 2rem 1rem;
   margin-top: auto;
 }
 
