@@ -19,44 +19,48 @@
   </header>
 
   <main class="layout-projects">
-    <!-- Sidebar with project links -->
-    <aside class="project-list">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="#project-website">Building My Website</a></li>
-        <li><a href="#project-automation">Excel Automation Tools</a></li>
-        <li><a href="#project-scripts">Data Scripts</a></li>
-      </ul>
+    <!-- Sidebar -->
+    <aside class="project-sidebar">
+      <div class="sidebar-box">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#project-website">Building My Website</a></li>
+          <li><a href="#project-automation">Excel Automation Tools</a></li>
+          <li><a href="#project-scripts">Data Scripts</a></li>
+        </ul>
+      </div>
     </aside>
 
-    <!-- Project content blocks -->
-    <section id="project-website">
-      <h2>Building My Website</h2>
-      <p>This portfolio site was built from scratch using HTML and CSS. I designed the layout, styling, and responsiveness myself, and hosted it via GitHub Pages. It reflects my style and gives me full control of content and updates.</p>
-      <a href="https://github.com/lizthom/portfolio" target="_blank">View Source on GitHub</a>
-    </section>
+    <!-- Project Details -->
+    <div class="project-details">
+      <section id="project-website">
+        <h2>Building My Website</h2>
+        <p>This portfolio site was built from scratch using HTML and CSS. I designed the layout, styling, and responsiveness myself, and hosted it via GitHub Pages. It reflects my style and gives me full control of content and updates.</p>
+        <p><a href="https://github.com/lizthom/portfolio" target="_blank">View Source on GitHub</a></p>
+      </section>
 
-    <section id="project-automation">
-      <h2>Excel Automation Tools</h2>
-      <p>Details coming soon about Excel tools for speeding up reporting and analysis.</p>
-    </section>
+      <section id="project-automation">
+        <h2>Excel Automation Tools</h2>
+        <p>Details coming soon about Excel tools for speeding up reporting and analysis.</p>
+      </section>
 
-    <section id="project-scripts">
-      <h2>Data Scripts</h2>
-      <p>Details coming soon about useful scripts I've written for data cleaning, transformation, and quick insights.</p>
-    </section>
+      <section id="project-scripts">
+        <h2>Data Scripts</h2>
+        <p>Details coming soon about useful scripts I've written for data cleaning, transformation, and quick insights.</p>
+      </section>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Elizabeth Thomas</p>
   </footer>
-<img src="assets/blob.png" alt="" class="blob-background">
-<button class="back-to-top" onclick="scrollToTop()">↑ Top</button>
-  <script>
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
 
+  <img src="assets/blob.png" alt="" class="blob-background">
+  <button class="back-to-top" onclick="scrollToTop()">↑ Top</button>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
