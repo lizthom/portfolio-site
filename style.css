@@ -297,3 +297,23 @@ footer {
     width: 100%;
   }
 }
+
+/* ===== Return to Top Button ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--green-deep);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top:hover {
+  background-color: #2f4742;
+}
