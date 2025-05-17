@@ -239,65 +239,60 @@ footer {
   }
 }
 
-/* ===== POWER BI PROJECTS TWO-COLUMN LAYOUT ===== */
+/* ===== LAYOUT FOR POWER BI PROJECTS ===== */
 
 .layout-projects {
-  display: grid;
-  grid-template-columns: 220px 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 2rem;
   padding: 2rem;
 }
 
-.project-nav {
-  position: sticky;
-  top: 2rem;
-  align-self: start;
+.project-sidebar {
+  flex: 0 0 200px;
 }
 
-.project-nav section {
+.sidebar-box {
   background: var(--box);
   border-radius: 20px;
   padding: 1.5rem;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
 }
 
-.project-nav ul {
+.sidebar-box ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.project-nav li {
+.sidebar-box li {
   margin-bottom: 1rem;
 }
 
-.project-nav a {
+.sidebar-box a {
   color: var(--green-deep);
   font-weight: 600;
   text-decoration: none;
 }
 
-.project-nav a:hover {
+.sidebar-box a:hover {
   text-decoration: underline;
 }
 
-/* Each project in its own box */
-.project-box {
-  background: var(--box);
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem;
+.project-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* Responsive fallback */
 @media (max-width: 800px) {
   .layout-projects {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
-  .project-nav {
-    position: static;
-    margin-bottom: 2rem;
+  .project-sidebar {
+    width: 100%;
   }
 }
